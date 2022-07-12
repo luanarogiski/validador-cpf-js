@@ -1,12 +1,52 @@
 
+
+body {
+  line-height: none;
+  background-color: aquamarine;
+
+}
+
 .jumbotron {
   background-color: bisque;
+  font-size: 61px;
+  margin-top: 0;
+  margin-bottom: 10px;
 }
+
 
 h1 {
   text-align: center;
+  
 }
 
-.formulario {
-    margin-top: 5%;
-  }
+
+
+.page-header {
+  padding-bottom: 8px;
+  margin: 10px 0 10px;
+  border: none;
+  
+}  
+
+#formulario {
+  margin-top: 60px;
+  width: 60%;
+  margin-left: 30%;
+ 
+}
+
+#btn {
+  margin-left: 30%;
+  margin-top: 60px;
+}
+
+#cpf_digitado {
+    max-width: 70%;
+}  
+.mensagens {
+  text-align: center;
+    margin-top: 40px;
+    width: 28%;
+    margin-left: 38%;
+    font-size: 15px;
+}

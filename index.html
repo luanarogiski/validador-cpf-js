@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>JavaScript Gama Academy</title>
+    <title>Validador CPF</title>
 
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
@@ -17,40 +17,36 @@
         integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
     <link rel="stylesheet" href="./style.css">
-
-
 </head>
 
 <body>
     <div class="jumbotron">
-        <div class="container">
             <h1 class="page-header">Validador de CPF</h1>
-        </div>
-
     </div>
-    <div class="container formulario">
-        <form>
+
+    <div class="container">
+        <form id="formulario">
             <div class="form-group">
                 <div class="input-group input-group-lg">
-                    <span class="input-group-addon" id="sizing-addon1">CPF</span>
+                    <span class="input-group-addon" id="sizing-addon1" style="padding-right: 26px;"> <strong>CPF</strong></span>
                     <input type="text" class="form-control" placeholder="Digite o cpf para validação ..." aria-describedby="sizing-addon1" id="cpf_digitado">
                 </div>
-                <small class="form-text text-muted">Digite somente numeros</small>
+                <small class="form-text text-muted" style="color: darkslategray;">Digitar somente números</small>
             </div>
-            <button type="button" class="btn btn-info" onclick="validacao()">VALIDAR</button>
+            <button type="button" id="btn" class="btn btn-info" onclick="validacao()">VALIDAR</button>
         </form>
-    </div>
-    <div class="container page-header">
-        <div id="success" class="alert alert-success" style="display: none;" role="alert">
-            <span></span>
-            <strong>(CPF Válido!)</strong>
+   
+        <div class="mensagens">
+            <div id="success" class="alert alert-success" style="display: none;" role="alert">
+                <span></span>
+                <strong>(CPF Válido!)</strong>    
+            </div>
+            <div id="error" class="alert alert-danger" style="display: none" role="alert">
+                <span></span>
+                <strong>(CPF Inválido!)</strong>
             
-        </div>
-        <div id="error" class="alert alert-danger" style="display: none;" role="alert">
-            <span></span>
-            <strong>(CPF Inválido!)</strong>
-            
-        </div>
+            </div>
+        </div>   
     </div>
 
 </body>
